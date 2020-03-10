@@ -16,6 +16,7 @@ public class Main {
 		try {
 			engine = new Engine("Thumper", 440);
 			Car corvette = new Car(engine);
+			System.out.println(engine.toString());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

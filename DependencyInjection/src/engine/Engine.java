@@ -30,10 +30,16 @@ public class Engine {
 		if (name.trim().length() == 0) {
 			throw new Exception("Engine name cannot be blank");
 		}
+		this.name = name;
 	}
 	private void setDisplacement(int displacement) throws Exception {
 		if (displacement < 0) {
 			throw new Exception("Engine displacement cannot be zero or negative");
 		}
+		this.displacement = displacement;
+	}
+	
+	public String toString() {
+		return "Name: " + name +", Displacement: "+displacement;
 	}
 }
